@@ -1,0 +1,116 @@
+.category::before{
+    content: "";
+    height: 100px;
+    display: block;
+}
+.category{
+    padding: 0 20px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.category-top{
+    margin-bottom: 50px;
+    width: 100%;
+}
+.category-top p{
+    margin: 0 25px;
+    font-size: 12px;
+}
+.category-left{
+    width: 20%;
+}
+.category-right{
+    width: 80%;
+}
+.category-right-top-item:first-child{
+    flex: 2;
+    font-size: 16px;
+    font-weight: bold;
+}
+.category-right-top{
+    flex: 1;
+    padding: 0 12px;
+    height: min-content;
+}
+.category-right-top button{
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+}
+.category-right-top select{
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+}
+.category-right-content{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.category-right-content-item{
+    width: calc(25% - 12px);
+    text-align: center;
+    padding: 12px 0;
+    margin:12px 0 12px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    position: relative;
+    transition: top ease-in 0.2s;
+}
+.category-right-content-item:hover{
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15);
+    top: -2px;
+}
+.category-right-content-item h1{
+    font-size: 11px;
+    margin-top: 6px;
+    color: #333;
+}
+.category-right-content-item img{
+    width: 100%;
+}
+.category-right-content-item p{
+    font-size: 12px;
+}
+.category-right-bottom{
+    width: 100%;
+    justify-content: space-between;
+    margin: 30px p 20px;
+}
+.category-left ul li{
+    padding: 12px 0;
+}
+.category-left ul li>a{
+    font-size: 16px;
+    font-weight: bold;
+}
+.category-left ul li ul li{
+    padding-left: 12px;
+    transition: right ease-in 0.2s;
+    position: relative;
+}
+.category-left ul li ul li:hover {
+    right: -3px;
+}
+.category-left-item ul{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 2s ease-out;
+}
+.category-left-item:hover > ul {
+    max-height: max-content;
+}
+
+
